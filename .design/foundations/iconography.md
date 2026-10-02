@@ -9,4 +9,5 @@ Fuentes: `index.html:67-79,106-110,329-338`; `.sdd/specs/portafolio-profesional/
 - Si el icono acompaña una etiqueta visible, marcarlo decorativo (`aria-hidden="true"`); el nombre accesible vive en el enlace/botón.
 - Los iconos no se presentan como control aislado menor de 44 × 44 px.
 - Fotografía de perfil: reutilizar el archivo original `pedro.png` de la raíz; ajustar encuadre con CSS, conservar proporción y añadir texto alternativo descriptivo (`index.html:67-79`).
+- Favicon SVG local con monograma PG y los colores principales del sistema (`favicon.svg`, `index.html` en el `<head>`).
 - No usar capturas o demos de repositorios si no están confirmadas disponibles y apropiadas.

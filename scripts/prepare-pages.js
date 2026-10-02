@@ -4,7 +4,7 @@ import { dirname, join } from "node:path";
 
 const repositoryRoot = dirname(dirname(fileURLToPath(import.meta.url)));
 const outputDirectory = join(repositoryRoot, "site-dist");
-const publishFiles = ["index.html", "styles.css", "app.js", "projects.js", "pedro.png"];
+const publishFiles = ["index.html", "styles.css", "app.js", "projects.js", "pedro.png", "favicon.svg"];
 
 await rm(outputDirectory, { recursive: true, force: true });
 await mkdir(outputDirectory, { recursive: true });

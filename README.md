@@ -36,6 +36,6 @@ El catálogo se guarda en el propio sitio: no se consulta la API de GitHub al vi
 
 ## Publicación
 
-El workflow `.github/workflows/pages.yml` ejecuta pruebas, prepara una lista permitida de archivos estáticos y despliega el artefacto en GitHub Pages al actualizar `main`. Solo `index.html`, `styles.css`, `app.js`, `projects.js` y `pedro.png` se copian al sitio publicado; specs, documentación, pruebas y configuración permanecen fuera del artefacto web.
+El workflow `.github/workflows/pages.yml` ejecuta pruebas, prepara una lista permitida de archivos estáticos y despliega el artefacto en GitHub Pages al actualizar `main`. Solo `index.html`, `styles.css`, `app.js`, `projects.js`, `pedro.png` y `favicon.svg` se copian al sitio publicado; specs, documentación, pruebas y configuración permanecen fuera del artefacto web.
 
 Para cambiar el conjunto público del sitio, edita `publishFiles` en `scripts/prepare-pages.js`.
