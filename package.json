@@ -1,0 +1,9 @@
+{
+  "name": "pedro-gomez-portfolio",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --test",
+    "build:pages": "node scripts/prepare-pages.js"
+  }
+}
