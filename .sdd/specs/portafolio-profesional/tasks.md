@@ -4,13 +4,15 @@ Modo SDD: standard
 
 Fase: Tasks
 
-Estado: en progreso
+Estado: completado
 
 Gate 1: aprobado
 
 Gate 2: aprobado
 
 Gate 3: aprobado por el usuario el 2026-10-02
+
+Gate 4: aprobado por el usuario el 2026-10-02
 Fecha: 2026-10-02
 
 ## Wave 1 — Catálogo y comportamiento verificable
@@ -29,7 +31,7 @@ Fecha: 2026-10-02
 - [x] **3.1** Añadir `README.md` con desarrollo local, ejecución de tests, actualización de CV/proyectos y pasos de mantenimiento (Req R4.4).
 - [x] **3.2** Configurar `scripts/prepare-pages.js` para copiar una lista permitida de archivos a `site-dist/` y `.github/workflows/pages.yml` para correr tests antes de publicar el artefacto; usar permisos mínimos y el flujo de GitHub Pages desde `main` (Req R4.1, R4.2, R4.6).
 - [x] **3.3** Ejecutar validación local: tests, comprobación de sintaxis/enlaces, flujos de teclado y búsqueda; verificar render a 360/768/1440 px, impresión, temas, movimiento reducido y fotografía; cerrar hallazgos visuales comprobables en `.design/ui-tech-debt.md` (Req R1.8, R2.1–R2.9, R3.3–R3.6, R4.3; RNF-1–RNF-5).
-- [🔵] **3.4** Inicializar Git con rama `main`, crear repositorio público `furthurr/furthurr.github.io` mediante GitHub CLI, publicar el código validado, activar GitHub Pages con Actions y comprobar workflow y URL pública (Req R4.1–R4.3, R4.6).
+- [x] **3.4** Inicializar Git con rama `main`, crear repositorio público `furthurr/furthurr.github.io` mediante GitHub CLI, publicar el código validado, activar GitHub Pages con Actions y comprobar workflow y URL pública (Req R4.1–R4.3, R4.6).
 
 ## Dependencias y waves
 
@@ -48,4 +50,4 @@ flowchart TD
 
 ## Gate 3
 
-Aprobado por el usuario el 2026-10-02. La publicación en `furthurr/furthurr.github.io` forma parte de la solicitud original y se ejecutará después de validar el sitio.
+Aprobado por el usuario el 2026-10-02. Implementación y publicación completas. El detalle de verificación final se registrará en `verification.md`.

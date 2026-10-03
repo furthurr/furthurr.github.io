@@ -1,33 +1,27 @@
 # Colores
 
-Estado: implementados y validados en navegador el 2026-10-02.
+Fuente: `styles.css:28-87` y bloque de adaptación `@media screen`; referencia en `../references/rsnl-creative.md`.
+Actualización: 2026-10-02.
 
-Fuentes: `styles.css:1-48`, `styles.css:915-984`; definición aprobada en `.sdd/specs/portafolio-profesional/design.md:45-50`.
+| Token | Claro | Oscuro | Uso |
+|---|---|---|---|
+| `--color-bg` | `#FFFFFF` | `#111111` | Lectura, trayectoria y formación |
+| `--color-surface` | `#FFFFFF` | `#181818` | Tarjetas |
+| `--color-text` | `#111111` | `#FFFFFF` | Texto primario |
+| `--color-text-muted` | `#525252` | `#C7C7C7` | Texto secundario |
+| `--color-accent` | `#BA261A` | `#EDAD3C` | Enlaces y estados |
+| `--color-accent-soft` | `#FFF1E5` | `#302218` | Paneles y badges |
+| `--color-border` | `#DEDEDE` | `#3B3B3B` | Bordes |
+| `--color-tint` | `#F5F4F2` | `#151515` | Fondo de habilidades |
+| `--color-action-bg` | `#111111` | `#FFFFFF` | Acción primaria |
+| `--color-action-text` | `#FFFFFF` | `#111111` | Texto del botón |
 
-## Claro
+Con JS, el tema se aplica globalmente mediante `body[data-scroll-theme]`: fondo negro `#000000`, superficies `#141414` y bordes `#383838` en oscuro; fondo y superficies blancas en claro. Las secciones tienen fondos transparentes y heredan los tokens globales. La transición de fondo, texto y bordes dura 1 s. Fuente: bloque de tema global de pantalla en `styles.css`, `initializeScrollTheme` en `app.js:19-61`.
 
-| Token CSS | Valor | Uso |
-|---|---|---|
-| `--color-bg` | `#F8FAFC` | Fondo principal |
-| `--color-surface` | `#FFFFFF` | Tarjetas y superficies |
-| `--color-text` | `#0F172A` | Texto primario y titulares |
-| `--color-text-muted` | `#334155` | Texto secundario |
-| `--color-accent` | `#0369A1` | Enlaces, CTA y estados activos |
-| `--color-accent-soft` | `#E0F2FE` | Fondo suave de etiquetas destacadas |
-| `--color-border` | `#E2E8F0` | Bordes y divisores |
+Sin JS, la cabecera, presentación y catálogo conservan fondo negro, superficies `#141414`, texto blanco, secundarios `#C7C7C7` y enlaces ámbar; las secciones de lectura siguen el tema del sistema de la tabla anterior.
 
-## Oscuro
+Colores extraídos de RSNL: rojo `--color-brand-red: #EE3A2A` y ámbar `--color-brand-amber: #EDAD3C`. Gradiente de interacción a 45 grados. El rojo de marca es decorativo; sobre fondo blanco se usa rojo oscuro `#BA261A` para el texto (contraste aproximado 6.2:1). El ámbar sobre negro tiene contraste aproximado 10.6:1. Foco visible de 3 px.
 
-| Token CSS | Valor | Uso |
-|---|---|---|
-| `--color-bg` | `#020617` | Fondo principal |
-| `--color-surface` | `#0F172A` | Tarjetas y superficies |
-| `--color-text` | `#F8FAFC` | Texto primario y titulares |
-| `--color-text-muted` | `#CBD5E1` | Texto secundario |
-| `--color-accent` | `#38BDF8` | Enlaces, CTA y estados activos |
-| `--color-accent-soft` | `#082F49` | Fondo suave de etiquetas destacadas |
-| `--color-border` | `#334155` | Bordes y divisores |
+Con JS, contacto y footer siguen el tema global. Sin JS, contacto sigue el tema de lectura y footer permanece negro. Impresión con fondo blanco y tinta oscura.
 
-El panel de contacto conserva una superficie de tinta en ambos temas (`--color-contact-bg: #0F172A`) con texto `#F8FAFC`, texto secundario `#CBD5E1` y enlaces `#7DD3FC` (`styles.css:12-15,915-984`).
-
-El tema se selecciona con `prefers-color-scheme`, sin control separado (`styles.css:36-48`). Contrastes medidos en los principales pares de texto/acción: tema claro 5.42:1 o mayor; oscuro 5.25:1 o mayor en hover del CTA; enlaces del panel de contacto 10.71:1. No usar el color como único indicador de categoría o estado.
+Superficies específicas del carrusel/visor (`styles.css:779-825,890-975`): fondo de previsualización `#F3F4F6`; indicador de ampliación negro al 75 % con texto blanco; visor `#101010`, texto blanco, borde `#383838`, controles con borde `#454545` y contador `#C7C7C7`. Backdrop negro al 85 %. El visor conserva este fondo oscuro para presentar las capturas con contraste estable.

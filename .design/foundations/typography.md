@@ -1,13 +1,17 @@
 # Tipografía
 
-Estado: implementada y revisada en navegador el 2026-10-02.
+Fuente: `styles.css:1-25,45-47` y bloque de adaptación de pantalla.
+Referencia: `../references/rsnl-creative.md`. Actualización: 2026-10-02.
 
-Fuentes: `styles.css:16-17,62-69,236-268,364-379`; dirección aprobada en `.sdd/specs/portafolio-profesional/design.md:45-56`.
-
-| Rol | Familia | Guía |
+| Rol | Familia | Escala |
 |---|---|---|
-| Titulares y texto de lectura | Sans-serif del sistema (`system-ui`, `-apple-system`, `Segoe UI`, sans-serif) | Jerarquía clara; evitar depender de una fuente descargada |
-| Texto de interfaz | Mismo stack sans-serif | Navegación, botones, búsqueda, descripción y CV |
-| Tecnología/metadata | Monospace del sistema (`ui-monospace`, `SFMono-Regular`, monospace) | Etiquetas breves de tecnologías, categorías y fechas |
+| Titulares / monograma | Plus Jakarta Sans local | H1 40–90 px, peso 800, line-height 1.12, tracking 0.01em |
+| H2 de sección | Plus Jakarta Sans local | 32–56 px, peso 800, line-height 1.2, tracking 0.025em |
+| H2 del panel IA | Plus Jakarta Sans local | 28.8–40 px |
+| Nombre del proyecto seleccionado | Plus Jakarta Sans local | 22–32 px; 28 px en móvil; peso 800, line-height 1.2, tracking 0.01em (`styles.css:770-777,1679-1681`) |
+| Cuerpo / interfaz | Sans-serif del sistema | Base 16 px, line-height 1.7 |
+| Metadata / tecnologías | Monospace del sistema | Etiquetas breves |
 
-Base de texto: 1 rem y `line-height: 1.7`; titulares escalables con `clamp()`; etiquetas de tecnología en monospace. No se descargan fuentes externas.
+Tres archivos WOFF2 en `assets/fonts/` para pesos 400, 700 y 800 (aprox. 103 KB en total). `font-display: swap`; fallback del sistema. Licencia en `assets/fonts/OFL.txt`. La publicación copia estas fuentes al artefacto Pages.
+
+La referencia usa Inter para el cuerpo. La adaptación conserva sans-serif del sistema para el cuerpo y usa la familia original en titulares. No hay peticiones de fuentes a servicios externos.

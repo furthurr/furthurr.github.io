@@ -17,7 +17,7 @@ Crear y publicar un portafolio profesional en español en GitHub Pages. La entra
 - El usuario indica que trabaja actualmente para Banco Azteca desde la última fecha de ese CV.
 - GitHub CLI está autenticado como `furthurr`.
 - Se identificaron 24 repositorios públicos: 23 originales y 1 fork.
-- `furthurr/furthurr.github.io` no existía al momento de la consulta; el usuario aprobó esa cuenta y dirección, y el repositorio se creará para publicar el sitio.
+- `furthurr/furthurr.github.io` no existía al momento de la consulta inicial; el usuario aprobó esa cuenta y dirección, y el repositorio público se creó el 2026-10-02 con GitHub Pages habilitado.
 - No existe código previo, steering local ni documentación canónica de arquitectura, UI o datos en esta carpeta. El diseño deberá capturar el contexto necesario para este sitio nuevo.
 
 ## Historia 1 — Consultar el CV
@@ -121,7 +121,7 @@ El sitio deberá situar este eje en el titular principal, la síntesis y los pri
 ## Supuestos y decisiones pendientes
 
 1. El usuario aprobó publicar en la cuenta pública `furthurr`; el destino final es `https://furthurr.github.io/` mediante el repositorio de usuario `furthurr/furthurr.github.io`.
-2. La sesión GitHub CLI disponible está autenticada como `furthurr`, con permisos `repo` y `workflow`. La consulta del repositorio de sitio devolvió HTTP 404, por lo que se creará como parte de la fase de publicación tras la aprobación correspondiente.
+2. La sesión GitHub CLI disponible está autenticada como `furthurr`, con permisos `repo` y `workflow`. La consulta inicial del repositorio de sitio devolvió HTTP 404; posteriormente se creó y se habilitó Pages.
 3. La fecha de ingreso a Banco Azteca será septiembre de 2022 y el cargo/responsabilidades serán los indicados explícitamente por el usuario.
 4. Se utilizará `pedrogvas@gmail.com` como correo profesional, ya que aparece tanto en el CV como en un README público del usuario.
 5. El CV público mostrará ciudad/país y contacto profesional. Se omitirán fecha de nacimiento, estado civil, domicilio detallado y teléfono desactualizado.

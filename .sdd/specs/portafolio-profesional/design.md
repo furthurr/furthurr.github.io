@@ -31,6 +31,7 @@ Sitio estático de una sola página, sin servidor de aplicación, base de datos,
 5. `pedro.png`: foto proporcionada, reutilizada desde la raíz.
 6. `.github/workflows/pages.yml`: validación con Node y publicación de Pages desde `main` usando el flujo oficial de artefacto.
 7. `scripts/prepare-pages.js`: copia a `site-dist/` una lista permitida de archivos estáticos para publicar solo el sitio (no pruebas ni documentación interna).
+8. `favicon.svg`: icono local con monograma PG para pestañas y marcadores.
 
 El navegador carga contenido estático del mismo origen. Los proyectos se filtran localmente; los enlaces de las tarjetas navegan a GitHub al ser seleccionados. Las capacidades de GitHub no serán necesarias para ver la página.
 
@@ -139,10 +140,10 @@ sequenceDiagram
     Navegador-->>Visitante: Navega al repo público en GitHub
 ```
 
-## Documentación visual propuesta
+## Documentación visual
 
-El usuario autorizó el sistema compacto completo en `.design/`. Los valores registrados allí son propuesta de esta fase, pendientes de Gate 2; tras implementarlos se contrastarán con los tokens CSS reales y se actualizará el registro de deuda visual.
+El usuario autorizó el sistema compacto completo en `.design/` y lo aprobó en Gate 2. Sus tokens se implementaron en `styles.css`, se contrastaron con los tokens reales y el registro visual se revisó en navegador.
 
 ## Gate 2
 
-Aprobado por el usuario el 2026-10-02. Las tareas se detallan en `tasks.md`; se iniciará implementación después del Gate 3.
+Aprobado por el usuario el 2026-10-02. La implementación y publicación se completaron conforme a `tasks.md`; la verificación final y el Gate 4 están en `verification.md`.
