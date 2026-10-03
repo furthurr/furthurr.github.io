@@ -3,7 +3,7 @@ import assert from "node:assert/strict";
 import { access } from "node:fs/promises";
 import { portfolioWorks } from "../portfolio-work.js";
 
-test("las galerías contienen los doce tableros seleccionados en orden y sus 79 imágenes locales", async () => {
+test("las galerías contienen los doce tableros seleccionados en orden y sus 70 imágenes locales", async () => {
   const expectedSlugs = [
     "genera-banco-azteca",
     "nissan",
@@ -16,7 +16,7 @@ test("las galerías contienen los doce tableros seleccionados en orden y sus 79 
     "espectro",
     "nuevoscomienzos",
     "tibea",
-    "pokemontest",
+    "shic",
   ];
   assert.deepEqual(portfolioWorks.map(({ slug }) => slug), expectedSlugs);
   assert.deepEqual(
@@ -25,7 +25,7 @@ test("las galerías contienen los doce tableros seleccionados en orden y sus 79 
   );
   assert.equal(
     portfolioWorks.reduce((total, work) => total + work.images.length, 0),
-    79,
+    70,
   );
 
   const imagePaths = portfolioWorks.flatMap((work) =>

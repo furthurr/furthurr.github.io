@@ -42,7 +42,7 @@ Los enlaces externos del sitio usan `target="_blank"` y `rel="noopener noreferre
 - Los tableros, su orden y sus imágenes se describen en `portfolio-work.js`. Fuentes y selección en `.design/references/private-projects.md`.
 - El quinto argumento de `pinterestBoard` permite ajustar la portada: `imageIndices` para seleccionar imágenes (índices desde cero), `position`, `zoom` y `mode: "cover"`. El índice principal del cuarto argumento debe coincidir con la primera imagen seleccionada.
 - `npm run build:pages` copia las galerías a `site-dist/assets/portfolio/` para su publicación.
-- `npm test` comprueba el orden de los 12 tableros, sus enlaces y la disponibilidad de las 79 imágenes locales de la selección.
+- `npm test` comprueba el orden de los 12 tableros, sus enlaces y la disponibilidad de las 70 imágenes locales de la selección.
 
 ## Contacto
 

@@ -19,7 +19,7 @@
 - Último commit documentado: `f37da1d` (sincronización inicial por fecha: 2026-10-02).
 - Fecha de última revisión visual: 2026-10-02.
 - Tecnología visual detectada: web estática con HTML semántico, CSS y JavaScript ESM, sin framework ni dependencias de UI.
-- Alcance: una página responsive que abre con el CV y destaca herramientas de IA, agentes y skills; incluye 12 proyectos privados con 79 imágenes locales, un carrusel de 12 proyectos públicos y enlaces a Pinterest y GitHub.
+- Alcance: una página responsive que abre con el CV y destaca herramientas de IA, agentes y skills; incluye 12 proyectos privados con 70 imágenes locales, un carrusel de 12 proyectos públicos y enlaces a Pinterest y GitHub.
 
 ## Contexto para IA
 
@@ -31,5 +31,5 @@
 - Fuentes de verdad: tokens y fuentes en `styles.css:1-87`; adaptación de pantalla en el bloque `/* RSNL Creative-inspired presentation */`; catálogo visual en `portfolio-work.js` y su componente en `app.js`. `.sdd/specs/portafolio-profesional/design.md` describe la dirección visual anterior; la referencia actual y su evidencia viven en `references/rsnl-creative.md`.
 - Accesibilidad visual: focus visible, objetivos táctiles mínimos de 44 × 44 px, respeto a `prefers-reduced-motion` y estilo de impresión. Con JS el tema se determina por scroll; sin JS se conserva la alternancia estática y el tema del sistema para lectura.
 - Fuentes Plus Jakarta Sans descargadas y servidas localmente en `assets/fonts/`, con licencia OFL. Las imágenes de proyectos están agrupadas en `assets/portfolio/` y se describen en `portfolio-work.js`. Sin dependencias de CDN. La fotografía es `pedro.png`.
-- Selección privada (`portfolio-work.js:19-126`): Genera Banco Azteca, Nissan, Juan Valdez, DragonTeam, EntradaGroup, Clapp, Alianza, Hava, Espectro, Nuevos Comienzos, Tibea y PokemonTest. Las portadas admiten `coverOptions` para elegir imágenes, posición, zoom y modo de relleno (`app.js:53-95`, `styles.css:808-835`). Los ajustes particulares de seis proyectos se detallan en `references/private-projects.md` y se verificaron a 320, 390, 768 y 1440 px.
+- Selección privada (`portfolio-work.js:19-119`): Genera Banco Azteca, Nissan, Juan Valdez, DragonTeam, EntradaGroup, Clapp, Alianza, Hava, Espectro, Nuevos Comienzos, Tibea y Shic. Las portadas admiten `coverOptions` para elegir imágenes, posición, zoom y modo de relleno (`app.js:53-95`, `styles.css:808-835`). Shic usa su única imagen con `cover` y punto de recorte al 4 % desde arriba; verificado a 390 y 1440 px. Ajustes particulares en `references/private-projects.md`.
 - Contacto: correo y logotipos SVG inline de GitHub, WhatsApp y Telegram con `currentColor`, controles de 48 px y nombres accesibles (`index.html:492-514`, `styles.css:1106-1135`). En móvil se conservan los enlaces HTTPS oficiales de mensajería; en escritorio `initializeContactLinks` los dirige a los clientes web (`app.js:344-357`). Créditos en `THIRD_PARTY_NOTICES.md`. Destinos, temas, foco e impresión verificados en Chrome/Playwright a 320, 390, 768 y 1440 px.

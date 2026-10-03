@@ -111,16 +111,9 @@ export const portfolioWorks = [
     ["04.png", 230, 460],
     ["05.png", 230, 460],
   ], 1, { imageIndices: [1, 2, 4] }),
-  pinterestBoard("PokemonTest", "pokemontest", [
-    ["01.jpg", 736, 838],
-    ["02.jpg", 423, 854],
-    ["03.jpg", 423, 854],
-    ["04.jpg", 423, 854],
-    ["05.jpg", 423, 854],
-    ["06.jpg", 423, 854],
-    ["07.jpg", 423, 854],
-    ["08.jpg", 423, 854],
-    ["09.jpg", 423, 854],
-    ["10.jpg", 423, 854],
-  ], 0, { mode: "cover", imageIndices: [0] }),
+  pinterestBoard("Shic", "shic", [["01.jpg", 723, 11952]], 0, {
+    mode: "cover",
+    position: "center 4%",
+    imageIndices: [0],
+  }),
 ];
