@@ -56,3 +56,14 @@ Los enlaces externos del sitio usan `target="_blank"` y `rel="noopener noreferre
 El workflow `.github/workflows/pages.yml` ejecuta pruebas, prepara una lista permitida de archivos estáticos y despliega el artefacto en GitHub Pages al actualizar `main`. Se copian `index.html`, `styles.css`, `app.js`, `portfolio-work.js`, `pedro.png`, `favicon.svg`, `THIRD_PARTY_NOTICES.md`, las fuentes WOFF2 con su licencia y las imágenes desde `assets/portfolio/`. Specs, documentación interna, pruebas y configuración permanecen fuera del artefacto web.
 
 Para cambiar el conjunto público del sitio, edita `publishFiles` y las rutas de assets en `scripts/prepare-pages.js`.
+
+## Autor
+
+<a href="https://furthurr.github.io/" target="_blank" rel="noopener noreferrer">Pedro G. V. @furthurr</a>
+
+- **GitHub:** https://github.com/furthurr
+- **Email:** pedrogvas@gmail.com
+
+## Licencia
+
+MIT
